@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar__logo">
+          <div class="logo-box">
+            <img
+              src="assets/images/gallery.png"
+              alt="Gallery Logo"
+              class="logo-image"
+            />
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li class="nav-item active">
+              <div class="icon-square">
+                <img
+                  src="assets/images/element-4.png"
+                  alt="Dashboard Icon"
+                  class="nav-icon"
+                />
+              </div>
+              Dashboard
+            </li>
+            <li class="nav-item"><i class="fas fa-calendar"></i> Schedule</li>
+            <li class="nav-item"><i class="fas fa-comment"></i> Message</li>
+            <li class="nav-item"><i class="fas fa-bar-chart"></i> Analytics</li>
+            <li class="nav-item team"><i class="fas fa-users"></i> Team</li>
+          </ul>
+          <div class="sidebar-divider"></div>
+          <!-- Vertical line below "Team" -->
+          <ul>
+            <li class="nav-item"><i class="fas fa-user"></i> Profile</li>
+            <li class="nav-item"><i class="fas fa-cog"></i> Settings</li>
+          </ul>
+          <ul class="sidebar-bottom">
+            <li class="nav-item">
+              <i class="fas fa-question-circle"></i> Help
+            </li>
+            <li class="nav-item"><i class="fas fa-sign-out-alt"></i> Logout</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+          <div class="header__search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search here..." />
+          </div>
+          <div class="header__user">
+            <i class="fas fa-bell header__icon"></i>
+            <i class="fas fa-comment header__icon"></i>
+            <div class="header__profile">
+              <img src="assets/images/gallery.png" alt="User Avatar" />
+              <span>Mirie Kiritani</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+        </header>
+
+        <!-- Overview and Saving Plan Combined Section -->
+        <div class="overview-saving-container">
+          <!-- Overview Section -->
+          <div class="overview">
+            <h2>Overview</h2>
+            <div class="overview__cards">
+              <!-- Card 1: Your Balance -->
+              <div class="card card--balance">
+                <div class="card-header">
+                  <div class="card__icon-wrapper">
+                    <img
+                      src="assets/images/empty-wallet.png"
+                      alt="Wallet Icon"
+                      class="card__icon-image"
+                    />
+                  </div>
+                  <span>Your Balance</span>
+                </div>
+
+                <div class="card__subtitle-container">
+                  <img
+                    src="assets/images/export2.png"
+                    alt="Export Icon"
+                    class="card__export-icon"
+                  />
+                  <span class="card__subtitle positive"
+                    >+15% compared with last month</span
+                  >
+                </div>
+
+                <hr />
+                <div class="card__footer">
+                  <div class="card__amount">$28,891,138</div>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+
+              <!-- Card 2: Saving -->
+              <div class="card card--saving">
+                <div class="card-header">
+                  <div class="card__icon-wrapper green">
+                    <img
+                      src="assets/images/save-2.png"
+                      alt="Saving Icon"
+                      class="card__icon-image"
+                    />
+                  </div>
+                  <span>Saving</span>
+                </div>
+
+                <div class="card__subtitle-container">
+                  <img
+                    src="assets/images/export1.png"
+                    alt="Export Icon"
+                    class="card__export-icon"
+                  />
+                  <span class="card__subtitle negative"
+                    >-10% compared with last month</span
+                  >
+                </div>
+
+                <hr />
+                <div class="card__footer">
+                  <div class="card__amount">$1,050.44</div>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+
+              <!-- Card 3: Expenses -->
+              <div class="card card--expenses">
+                <div class="card-header">
+                  <div class="card__icon-wrapper yellow">
+                    <img
+                      src="assets/images/direct-up.png"
+                      alt="Expenses Icon"
+                      class="card__icon-image"
+                    />
+                  </div>
+                  <span>Expenses</span>
+                </div>
+
+                <div class="card__subtitle-container">
+                  <img
+                    src="assets/images/export.png"
+                    alt="Export Icon"
+                    class="card__export-icon"
+                  />
+                  <span class="card__subtitle positive"
+                    >+2% compared with last month</span
+                  >
+                </div>
+
+                <hr />
+                <div class="card__footer">
+                  <div class="card__amount">$200.31</div>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+
+              <!-- Card 4: Incomes -->
+              <div class="card card--incomes">
+                <div class="card-header">
+                  <div class="card__icon-wrapper blue">
+                    <img
+                      src="assets/images/direct-down.png"
+                      alt="Incomes Icon"
+                      class="card__icon-image"
+                    />
+                  </div>
+                  <span>Incomes</span>
+                </div>
+
+                <div class="card__subtitle-container">
+                  <img
+                    src="assets/images/export4.png"
+                    alt="Export Icon"
+                    class="card__export-icon"
+                  />
+                  <span class="card__subtitle positive"
+                    >+8% compared with last month</span
+                  >
+                </div>
+
+                <hr />
+                <div class="card__footer">
+                  <div class="card__amount">$21,121.0</div>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Saving Plan Section -->
+          <div class="saving-plan">
+            <div class="saving-plan__header">
+              <h2>Saving Plan</h2>
+              <a href="#" class="see-all">See All</a>
+            </div>
+            <div class="saving-plan__items">
+              <div class="saving-item">
+                <div class="saving-item__header">
+                  <h3>Bali Vacation</h3>
+                  <p class="saving-item__target">Target: August 25 2022</p>
+                </div>
+                <div class="saving-item__amount">
+                  <span class="current-amount">$1950,21</span>
+                  <span class="target-amount">/$4000</span>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div
+                      class="progress-bar__fill purple"
+                      style="width: 48%"
+                    ></div>
+                  </div>
+                  <span class="percentage purple">48%</span>
+                </div>
+              </div>
+              <div class="saving-item">
+                <div class="saving-item__header">
+                  <h3>New Gadget</h3>
+                  <p class="saving-item__target">Target: August 25 2022</p>
+                </div>
+                <div class="saving-item__amount">
+                  <span class="current-amount">$790,21</span>
+                  <span class="target-amount">/$1000</span>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div
+                      class="progress-bar__fill yellow"
+                      style="width: 79%"
+                    ></div>
+                  </div>
+                  <span class="percentage yellow">79%</span>
+                </div>
+              </div>
+              <div class="saving-item">
+                <div class="saving-item__header">
+                  <h3>Charity</h3>
+                  <p class="saving-item__target">Target: August 25 2022</p>
+                </div>
+                <div class="saving-item__amount">
+                  <span class="current-amount">$32,111</span>
+                  <span class="target-amount">/$100</span>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div
+                      class="progress-bar__fill green"
+                      style="width: 32%"
+                    ></div>
+                  </div>
+                  <span class="percentage green">32%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Analytics and Recent Transactions -->
+        <div class="bottom-section">
+          <!-- Analytics -->
+          <section class="analytics">
+            <div class="analytics__header">
+              <h2>Analytics</h2>
+              <div class="analytics__legend">
+                <span class="legend-item">
+                  <span class="legend-dot purple"></span> Label 1
+                </span>
+                <span class="legend-item">
+                  <span class="legend-dot yellow"></span> Label 1
+                </span>
+                <select class="dropdown">
+                  <option>Weekly</option>
+                </select>
+              </div>
+            </div>
+            <div class="analytics__graph">
+              <img
+                src="assets/images/Frame 317.png"
+                alt="Analytics Chart"
+                class="chart-image"
+              />
+            </div>
+          </section>
+
+          <!-- Recent Transactions -->
+          <section class="recent-transactions">
+            <div class="recent-transactions__header">
+              <h2>Recent Transaction</h2>
+              <a href="#" class="see-all">See All</a>
+            </div>
+            <ul class="transaction-list">
+              <li class="transaction-item">
+                <div class="transaction-icon">
+                  <img
+                    src="assets/images/gallery.png"
+                    alt="Transaction Icon"
+                    class="transaction-icon-image"
+                  />
+                </div>
+                <div class="transaction-details">
+                  <span>Figma</span>
+                  <span class="transaction-date">August 20, 2022</span>
+                </div>
+                <div class="transaction-amount">
+                  <span>$ 100</span>
+                  <span class="transaction-status completed">Completed</span>
+                </div>
+              </li>
+              <li class="transaction-item">
+                <div class="transaction-icon">
+                  <img
+                    src="assets/images/gallery.png"
+                    alt="Transaction Icon"
+                    class="transaction-icon-image"
+                  />
+                </div>
+                <div class="transaction-details">
+                  <span>Youtube</span>
+                  <span class="transaction-date">August 20, 2022</span>
+                </div>
+                <div class="transaction-amount">
+                  <span>$ 120</span>
+                  <span class="transaction-status completed">Completed</span>
+                </div>
+              </li>
+              <li class="transaction-item">
+                <div class="transaction-icon">
+                  <img
+                    src="assets/images/gallery.png"
+                    alt="Transaction Icon"
+                    class="transaction-icon-image"
+                  />
+                </div>
+                <div class="transaction-details">
+                  <span>Spotify</span>
+                  <span class="transaction-date">August 20, 2022</span>
+                </div>
+                <div class="transaction-amount">
+                  <span>$ 15</span>
+                  <span class="transaction-status completed">Completed</span>
+                </div>
+              </li>
+              <li class="transaction-item">
+                <div class="transaction-icon">
+                  <img
+                    src="assets/images/gallery.png"
+                    alt="Transaction Icon"
+                    class="transaction-icon-image"
+                  />
+                </div>
+                <div class="transaction-details">
+                  <span>Freepik</span>
+                  <span class="transaction-date">August 20, 2022</span>
+                </div>
+                <div class="transaction-amount">
+                  <span>$ 300</span>
+                  <span class="transaction-status completed">Completed</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
