@@ -824,4 +824,38 @@ body {
   .overview__cards {
     grid-template-columns: 1fr;
   }
+
+  /* Hide sidebar and show menu icon on mobile */
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 16rem;
+    height: 100vh;
+    background: #fff;
+    z-index: 1000;
+    transition: left 0.3s;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.08);
+  }
+  .sidebar.open {
+    left: 0;
+  }
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #4745a4;
+    z-index: 1100;
+  }
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Hide menu icon on desktop */
+.menu-toggle {
+  display: none;
 }
