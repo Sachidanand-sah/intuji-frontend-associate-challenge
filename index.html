@@ -28,32 +28,85 @@
         <nav class="sidebar-nav">
           <ul>
             <li class="nav-item active">
-              <div class="icon-square">
-                <img
-                  src="assets/images/element-4.png"
-                  alt="Dashboard Icon"
-                  class="nav-icon"
-                />
-              </div>
+              <img
+                src="assets/images/element-4.png"
+                alt="Dashboard Icon"
+                class="nav-icon"
+              />
               Dashboard
             </li>
-            <li class="nav-item"><i class="fas fa-calendar"></i> Schedule</li>
-            <li class="nav-item"><i class="fas fa-comment"></i> Message</li>
-            <li class="nav-item"><i class="fas fa-bar-chart"></i> Analytics</li>
-            <li class="nav-item team"><i class="fas fa-users"></i> Team</li>
+            <li class="nav-item">
+              <img
+                src="assets/images/Calendar.png"
+                alt="Schedule Icon"
+                class="nav-icon"
+              />
+              Schedule
+            </li>
+            <li class="nav-item">
+              <img
+                src="assets/images/sms.png"
+                alt="Message Icon"
+                class="nav-icon"
+              />
+              Message
+            </li>
+            <li class="nav-item">
+              <img
+                src="assets/images/Chart.png"
+                alt="Analytics Icon"
+                class="nav-icon"
+              />
+              Analytics
+            </li>
+            <li class="nav-item team">
+              <img
+                src="assets/images/user.png"
+                alt="Team Icon"
+                class="nav-icon"
+              />
+              Team
+            </li>
           </ul>
           <div class="sidebar-divider"></div>
-          <!-- Vertical line below "Team" -->
           <ul>
-            <li class="nav-item"><i class="fas fa-user"></i> Profile</li>
-            <li class="nav-item"><i class="fas fa-cog"></i> Settings</li>
-          </ul>
-          <ul class="sidebar-bottom">
             <li class="nav-item">
-              <i class="fas fa-question-circle"></i> Help
+              <img
+                src="assets/images/profile-2user.png"
+                alt="Profile Icon"
+                class="nav-icon"
+              />
+              Profile
             </li>
-            <li class="nav-item"><i class="fas fa-sign-out-alt"></i> Logout</li>
+            <li class="nav-item">
+              <img
+                src="assets/images/setting.png"
+                alt="Settings Icon"
+                class="nav-icon"
+              />
+              Settings
+            </li>
           </ul>
+          <div class="sidebar-bottom-wrapper">
+            <ul class="sidebar-bottom">
+              <li class="nav-item">
+                <img
+                  src="assets/images/info-circle.png"
+                  alt="Help Icon"
+                  class="nav-icon"
+                />
+                Help
+              </li>
+              <li class="nav-item">
+                <img
+                  src="assets/images/login.png"
+                  alt="Logout Icon"
+                  class="nav-icon"
+                />
+                Logout
+              </li>
+            </ul>
+          </div>
         </nav>
       </aside>
 
@@ -62,27 +115,49 @@
         <!-- Header -->
         <header class="header">
           <div class="header__search">
-            <i class="fas fa-search"></i>
+            <img
+              src="assets/images/search-normal.png"
+              alt="search_img"
+              class="search-icon"
+            />
             <input type="text" placeholder="Search here..." />
           </div>
           <div class="header__user">
-            <i class="fas fa-bell header__icon"></i>
-            <i class="fas fa-comment header__icon"></i>
-            <div class="header__profile">
-              <img src="assets/images/gallery.png" alt="User Avatar" />
-              <span>Mirie Kiritani</span>
-              <i class="fas fa-chevron-down"></i>
+            <img
+              src="assets/images/oval.png"
+              alt="User Oval"
+              class="user-oval"
+            />
+            <img
+              src="assets/images/header_msg.png"
+              alt="Message Icon"
+              class="header-msg"
+            />
+            <div class="header-img-overlay">
+              <img
+                src="assets/images/header_img.png"
+                alt="Profile Icon"
+                class="header-img"
+              />
+              <img
+                src="assets/images/gallery.png"
+                alt="Gallery Overlay"
+                class="gallery-overlay"
+              />
             </div>
+            <span class="user-name">Mirie Kiritani</span>
+            <img
+              src="assets/images/arrow-down.png"
+              alt="Arrow Down"
+              class="arrow-down"
+            />
           </div>
         </header>
 
-        <!-- Overview and Saving Plan Combined Section -->
         <div class="overview-saving-container">
-          <!-- Overview Section -->
           <div class="overview">
             <h2>Overview</h2>
             <div class="overview__cards">
-              <!-- Card 1: Your Balance -->
               <div class="card card--balance">
                 <div class="card-header">
                   <div class="card__icon-wrapper">
@@ -144,7 +219,6 @@
                 </div>
               </div>
 
-              <!-- Card 3: Expenses -->
               <div class="card card--expenses">
                 <div class="card-header">
                   <div class="card__icon-wrapper yellow">
@@ -175,7 +249,6 @@
                 </div>
               </div>
 
-              <!-- Card 4: Incomes -->
               <div class="card card--incomes">
                 <div class="card-header">
                   <div class="card__icon-wrapper blue">
@@ -208,7 +281,6 @@
             </div>
           </div>
 
-          <!-- Saving Plan Section -->
           <div class="saving-plan">
             <div class="saving-plan__header">
               <h2>Saving Plan</h2>
@@ -276,9 +348,7 @@
           </div>
         </div>
 
-        <!-- Analytics and Recent Transactions -->
         <div class="bottom-section">
-          <!-- Analytics -->
           <section class="analytics">
             <div class="analytics__header">
               <h2>Analytics</h2>
@@ -303,7 +373,6 @@
             </div>
           </section>
 
-          <!-- Recent Transactions -->
           <section class="recent-transactions">
             <div class="recent-transactions__header">
               <h2>Recent Transaction</h2>
